@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import BasicComponent from './basic';
+import SimpleProp from './simpleProp'; 
 import Recipe from './recipe';
 import BarChartExample from './barchartexample';
 
@@ -21,10 +23,19 @@ class App extends Component {
     height: "50%"
     }
 render() {
-return (<div>
-<Recipe name={recipeIngredients} />
-<div style={this.divStyle}><BarChartExample /></div>
-</div>);
+return (
+  <div>
+      <BasicComponent />
+       <div> 
+           <SimpleProp name="dog"></SimpleProp>  
+           <SimpleProp name="cat"></SimpleProp> 
+           <SimpleProp name="mouse"></SimpleProp> 
+        </div> 
+      <Recipe name={recipeIngredients} />
+      <div style={this.divStyle}>
+        <BarChartExample />
+      </div>
+  </div>);
 }
 }
 export default App;
