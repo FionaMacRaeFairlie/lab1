@@ -18,7 +18,7 @@ const recipeIngredients = [
 class App extends Component {
   divStyle={
     padding: "5%",
-    margin: "5%",
+    margin: "10%",
     width: "50%",
     height: "50%"
     }
